@@ -1,0 +1,96 @@
+<!-- Panel de accesibilidad -->
+<div class="tx-unal-accesibilidad" >
+  <!-- defaultpanel -->
+  <div id="panel-accesibilidad" style="display: none" class="panel-content container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="row">
+                  <div class="col-md-3">
+                      <h4>Tamaño letra</h4>
+                      <button class="boton-panel" id="letra-disminuir" onclick="cambiarTamanioLetra('-')" type="submit" name="" value="">
+          A<sup>-</sup>
+        </button>
+                      <button class="boton-panel" id="letra-aumentar" onclick="cambiarTamanioLetra('+')" type="submit" name="" value="">
+          A<sup>+</sup>
+        </button>
+                      <input disabled="1" class="letras-porcentaje" id="letter-percent" type="text" name="" value="100%" />
+                  </div>
+                  <div class="col-md-3">
+                      <h4>Cambiar Contrastes</h4>
+                      <button class="boton-panel" id="contraste-1" onclick="cambiarContrastes(1)" type="submit" name="" value="">
+          1
+        </button>
+                      <button class="boton-panel" id="contraste-2" onclick="cambiarContrastes(2)" type="submit" name="" value="">
+          2
+        </button>
+                      <button class="boton-panel" id="contrate-3" onclick="cambiarContrastes(3)" type="submit" name="" value="">
+          3
+        </button>
+                  </div>
+                  <div class="col-md-3">
+                      <h4>Invertir colores</h4>
+                      <button class="boton-panel" id="inversor" onclick="invertirColores()" type="submit" name="" value="">
+          Aplicar
+        </button>
+                  </div>
+                  <div class="col-md-3">
+                      <h4>Restablecer ajustes</h4>
+                      <button class="boton-panel" id="defaul-config" onclick="defaultConfig()" type="submit" name="" value="">
+          Aplicar
+        </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- /content wrapper for padding -->
+  <div id="pestania-accesibilidad" class="">Panel de Accesibilidad</div>
+</div>
+
+<!-- Contenido -->
+<main class="detalle">
+  <div class="breadcrumb-class">
+      Está en:<a href="/" target="_self" title="Inicio">Inicio</a>/<span>Item menu ejemplo</span
+>
+<div class="container">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12">
+            <div class="alert alert-success text-center">
+              <h3>
+                Para continuar, haga clic en su rol dentro de la comunidad
+                académica.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 p-2">
+            <div class="card well">
+              <div class="card-body">
+                <a routerLink="login/estudiante" routerLinkActive="active" >
+                  <h3 class="text-center">Estudiante</h3>
+                  <img src="https://www.edificando.unal.edu.co/assets/edificando/estudiante-08f8f40c141d4d9130622bed6ce75020.png" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 p-2">
+            <div class="card well">
+              <div class="card-body">
+                <a routerLink="login/funcionario" routerLinkActive="active">
+                  <h3 class="text-center">Funcionario</h3>
+                  <img src="https://www.edificando.unal.edu.co/assets/edificando/docente-61ce45fc69046cca470abc5fdcc56b6e.png" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</main>
